@@ -11,11 +11,17 @@ public class SCConfigClienteController {
 	
 	@Value("${demo.nombreArchivo:Valor default}")
 	private String nombreArchivo;
+	@Value("${demo.propiedadDinamica:Valor default}")
+	private String propiedadDinamica;
 
 
 	@GetMapping("/propDemo")
 	public String leePropDemo() {
 		return nombreArchivo;
+	}
+	@GetMapping("/propDinamica")
+	public String leePropiedadDinamica() {
+		return propiedadDinamica;
 	}
 
 }
