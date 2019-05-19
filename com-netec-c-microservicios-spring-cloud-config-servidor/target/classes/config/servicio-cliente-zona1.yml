@@ -1,0 +1,13 @@
+eureka:
+  instance:
+    metadataMap:
+      zone: zona1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:3001/eureka/
+server:  
+  port: ${PORT:9001}
+  
+#
+demo:
+  nombreArchivo: servicio-cliente-zona1.yml

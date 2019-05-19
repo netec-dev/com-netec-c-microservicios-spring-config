@@ -1,0 +1,15 @@
+spring:  
+  application:
+    name: servicio-cliente
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: servicio-de-configuracion
+#      uri: http://localhost:2001
+  profiles:    active: zona1
+# Servidor Eureka 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:3001/eureka/

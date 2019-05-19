@@ -8,7 +8,7 @@
 		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.netec.c.microservicios</groupId>
+	<groupId>com.netec.c</groupId>
 	<artifactId>com-netec-c-microservicios-spring-cloud-config</artifactId>
 	<version>0.0.0.1-SNAPSHOT</version>
 	<name>com-netec-c-microservicios-spring-cloud-config</name>
@@ -41,4 +41,15 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>
+			com-netec-c-microservicios-spring-cloud-config-servidor
+		</module>
+		<module>
+			com-netec-c-microservicios-spring-cloud-eureka-servidor
+		</module>
+		<module>
+			com-netec-c-microservicios-spring-cloud-config-cliente
+		</module>
+	</modules>
 </project>
