@@ -4,6 +4,7 @@ spring:
     name: servicio-de-configuracion
   cloud:    config:      server:        git:
           uri: https://github.com/netec-dev/com-netec-c-microservicios-spring-cloud-config-repositorio.git
+          default-label: refreshDemo
           #En un repositorio público no son requeridas credenciales
           #username: ${github.username}
           #password: ${github.password}

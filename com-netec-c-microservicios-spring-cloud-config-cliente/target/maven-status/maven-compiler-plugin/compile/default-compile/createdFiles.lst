@@ -1,2 +1,3 @@
 com\netec\c\microservicios\spring\cloud\config\cliente\SCConfigClienteController.class
+com\netec\c\microservicios\spring\cloud\config\cliente\SCConfigClienteConfig.class
 com\netec\c\microservicios\spring\cloud\config\cliente\SCConfigClienteApp.class
