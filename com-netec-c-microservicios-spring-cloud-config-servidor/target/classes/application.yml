@@ -4,11 +4,14 @@ spring:
     name: servicio-de-configuracion
   cloud:    config:      server:        git:
           uri: https://github.com/netec-dev/com-netec-c-microservicios-spring-cloud-config-repositorio.git
-          default-label: refreshDemo
+          default-label: SCBus
           #En un repositorio público no son requeridas credenciales
           #username: ${github.username}
           #password: ${github.password}
-          cloneOnStart: true
+          cloneOnStart: true  rabbitmq:    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 # Información servidor
 server:  
   port: ${PORT:2001}
@@ -17,3 +20,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:3001/eureka/
+#
